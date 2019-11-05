@@ -1,0 +1,118 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>EASYFARM</title>
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/dashboard.css">
+    </head>
+    <body style="background:#fbfff8;">
+        <header>
+            <nav class="dtoggle">
+                <div><img src="../images/logo.png" class="logo-img" style="float:left; margin-left:15px;" /></div>
+                <ul class="navigation">
+                    <li><a href=""><button class="dbtn1">Log out</button></a></li>
+                    <li><a href="" class="text1">Kolawole</a></li>
+                    <li><a href=""><svg style="margin-top:7px;" width="25" height="25" viewBox="0 0 69 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M34.5 0C15.456 0 0 15.7955 0 35.2578C0 54.7201 15.456 70.5156 34.5 70.5156C53.544 70.5156 69 54.7201 69 35.2578C69 15.7955 53.544 0 34.5 0ZM34.5 10.5773C40.227 10.5773 44.85 15.3019 44.85 21.1547C44.85 27.0075 40.227 31.732 34.5 31.732C28.773 31.732 24.15 27.0075 24.15 21.1547C24.15 15.3019 28.773 10.5773 34.5 10.5773ZM34.5 60.6434C25.875 60.6434 18.2505 56.1304 13.8 49.2904C13.9035 42.2741 27.6 38.431 34.5 38.431C41.3655 38.431 55.0965 42.2741 55.2 49.2904C50.7495 56.1304 43.125 60.6434 34.5 60.6434Z" fill="#82b54f"/>
+                        </svg></a></li>
+                    <li><a href="" class="text1">Services</a></li>
+                    <li><a href="" class="text1">Support</a></li>
+                </ul>
+                <span class="open-slide">
+                    <a href="#" onclick="openSlideMenu()">
+                        <svg width="30" height="30">
+                            <path d="M0,5 30,5" stroke="#4b830d" stroke-width="5" />
+                            <path d="M0,14 30,14" stroke="#4b830d" stroke-width="5" />
+                            <path d="M0,23 30,23" stroke="#4b830d" stroke-width="5" />
+                        </svg>
+                    </a>
+                </span>
+            </nav>
+            <div id="dside-menu" class="dside-nav">
+                <div><a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a></div>
+                <div>
+                    <svg style="margin:10px 0 0 97px" width="45" height="47" viewBox="0 0 69 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M34.5 0C15.456 0 0 15.7955 0 35.2578C0 54.7201 15.456 70.5156 34.5 70.5156C53.544 70.5156 69 54.7201 69 35.2578C69 15.7955 53.544 0 34.5 0ZM34.5 10.5773C40.227 10.5773 44.85 15.3019 44.85 21.1547C44.85 27.0075 40.227 31.732 34.5 31.732C28.773 31.732 24.15 27.0075 24.15 21.1547C24.15 15.3019 28.773 10.5773 34.5 10.5773ZM34.5 60.6434C25.875 60.6434 18.2505 56.1304 13.8 49.2904C13.9035 42.2741 27.6 38.431 34.5 38.431C41.3655 38.431 55.0965 42.2741 55.2 49.2904C50.7495 56.1304 43.125 60.6434 34.5 60.6434Z" fill="white"/>
+                    </svg>
+                    <a style="color: #C4C4C4; text-align:center;">Edit profile</a>
+                    <hr>
+                    <a href="" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                    <a href="">Dashboard</a>
+                    <a href="">Hire farm workers</a>
+                    <a href="">Consult us</a>
+                    <a href="">Invest</a>
+                    <a href="">Account Details</a>
+                    <hr width="80%">
+                    <a href="">Invite Friends</a>
+                    <a href="">Account Manager</a>
+                    <a href="">Support</a>
+                    <a href="">FAQs</a>
+                    <hr width="80%">
+                    <a href="" style="margin-bottom:20px; color: #ff0000;">Log out</a>
+                </div>
+            </div>
+        </header>
+        <div class="ddash1">
+            <div style="width:180px;height:600px; background:#4a9303;" class="disp1">
+                <div>
+                    <svg style="margin:30px 0 0 68px" width="45" height="47" viewBox="0 0 69 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M34.5 0C15.456 0 0 15.7955 0 35.2578C0 54.7201 15.456 70.5156 34.5 70.5156C53.544 70.5156 69 54.7201 69 35.2578C69 15.7955 53.544 0 34.5 0ZM34.5 10.5773C40.227 10.5773 44.85 15.3019 44.85 21.1547C44.85 27.0075 40.227 31.732 34.5 31.732C28.773 31.732 24.15 27.0075 24.15 21.1547C24.15 15.3019 28.773 10.5773 34.5 10.5773ZM34.5 60.6434C25.875 60.6434 18.2505 56.1304 13.8 49.2904C13.9035 42.2741 27.6 38.431 34.5 38.431C41.3655 38.431 55.0965 42.2741 55.2 49.2904C50.7495 56.1304 43.125 60.6434 34.5 60.6434Z" fill="white"/>
+                    </svg>
+                    <p style="color: #C4C4C4; text-align:center;">Edit profile</p>
+                </div>
+                <hr>
+                <div style="margin-left:20px; color:white;">
+                    <p>Dashboard</p>
+                    <p>Hire farm workers</p>
+                    <p>Consult us</p>
+                    <p>Invest</p>
+                    <p>Account Details</p>
+                </div>
+                <hr width="80%">
+                <div style="margin-left:20px; color:white;">
+                    <p>Invite Friends</p>
+                    <p>Account Manager</p>
+                    <p>FAQs</p>
+                </div>
+                <hr width="80%">
+                <div style="margin-left:20px; color:#ff0000;">
+                    <p>Log Out</p>
+                </div>
+            </div>
+        </div>
+        <div class="ddash2">
+            <div class="dsize1">
+                <div>
+                    <h2 class="dtext1">Hiring.</h2>
+                </div>
+                <form>
+                    <div style="padding:0px 20px 0px;">
+                        <label>Number of workers</label><br>
+                        <input type="text" placeholder="e.g'example@email.com " required="required"><br>
+                    </div>
+                    <div style="padding:0px 20px 0px;">
+                        <label>Type</label><br>
+                        <select id="" name="type">
+                            <option value=""></option>
+                            <option value="">Planting</option>
+                            <option value="">Herding</option>
+                            <option value="">Cleaning</option>
+                        </select>
+                    </div>
+                    <div style="padding:0px 20px 0px;">
+                        <label>Resumption date</label><br>
+                        <input type="text" placeholder="" required="required"><br>
+                    </div>
+                </form>
+                <div><button class="dbtn2">Proceed to payment</button></div>
+            </div>
+        </div>
+        <script src="../js/dashboard.js"></script>
+    </body>
+</html>

@@ -1,0 +1,612 @@
+body{
+    font-family: Open Sans;
+}
+.toggle{
+   background-color:#fff; 
+   overflow:hidden;
+   box-shadow: 0px 10px 16px rgba(196, 196, 196, 0.16), 0px 4px 6px rgba(0, 0, 0, 0.06);
+}
+@media (max-width:768px) {
+    .toggle{height: 65px;}
+}
+@media (min-width:768px) {
+    .toggle{height: 80px;}
+    .logo-img{margin:10px 0 0 25px; }
+}
+.toggle a{
+    float:right;
+    display:block;
+    margin-left: 20px;
+    text-align:center;
+    text-decoration: none;
+    font-size: 18px;
+}
+.toggle ul {
+    margin: 20px 55px 0 0;
+    list-style:none;
+}
+.toggle a:hover {
+    color: black;
+    text-decoration: none;
+}
+.open-slide{
+    float: right;
+    margin-top: 18px;
+    margin-right: 20px;
+}
+.side-nav {
+    height:100%;
+    width: 0;
+    position: fixed;
+    z-index:1;
+    top:0;
+    right:0;
+    margin:auto;
+    background-color:white;
+    padding-top:60px;
+    overflow-x:hidden;
+    opacity:1;
+    transition:1s;
+}
+.side-nav a {
+    padding: 10px;
+    margin: auto;
+    text-decoration:none;
+    font-size: 22px;
+    color:#82b54f;
+    display:block;
+    text-align:center;
+}
+.side-nav a:hover {
+    color:black;
+    text-decoration:none;
+}
+.side-nav .btn-close {
+    position: absolute;
+    top:0;
+    right: 0;
+    font-size:36px;
+    margin-right:50px;
+}
+.sidenavleft{
+    width:50%;
+    float:left;
+    margin:20px 0 20px;
+}
+.sidenavright{
+    width:50%;
+    float:right;
+    margin:20px 0 20px;
+}
+   
+    
+@media (max-width:768px) {
+    .navigation{display:none}
+}
+@media (min-width:768px) {
+    .open-slide{display:none}
+}
+.text0{
+    color:#4b830d;
+    margin-top:10px;
+}
+.text1{
+    color:#82b54f;
+    margin-top:10px;
+}
+.btn1{
+    color:white;
+    background-color:#4b830d;
+    border:1px solid #4b830d;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    text-align:center;
+}
+#jumbo{
+    background: url(../images/jumbo.png) no-repeat;
+    background-size:cover;
+    padding:60px;
+}
+#jumbo .jumbotron {
+    color:white;
+    border-radius:20px;
+    padding:40px;
+    background-color: rgba(255,255,255,0)
+}
+@media (min-width:768px) {
+    #jumbo .jumbotron { max-width:60%}
+}
+
+.sect1{
+    background-color:#82b54f;
+    margin:0;
+}
+.text2{
+    color:white;
+    text-align:center;
+    padding-top:35px;
+    padding-bottom:20px;
+}
+.text3{
+    color:white;
+}
+.size1{
+    width:60%;
+}
+.font1{
+    font-size:23px;
+}
+.font2{
+    font-size:17px;
+}
+@media (min-width:768px){
+    .pos1{
+        float:right;
+        margin-right:20px;
+    }
+    .pos2{
+        float:left;
+        margin-left:30px;
+    }
+}
+
+/*responsiveness for mobile*/
+
+@media (max-width:768px){
+    .pos3{
+        margin:20px auto 0;
+    }
+    .resp1{
+        margin-bottom:50px;
+    }
+    .card1{
+        width:80%;
+        margin:0 auto 0;
+    }
+    .thumbs{
+        height:200px;
+    }
+    .font3{
+        font-size:28px;
+    }
+    .font4{
+        font-size:19px;
+    }
+    .resp2{
+        margin-bottom:30px;
+    }
+    .resp3{
+        margin-bottom:35px;
+    }
+    .inve{
+        margin-top:70px;
+    }
+}
+
+/*other joint responsiveness for wide screen*/
+@media (min-width:768px){
+    .thumbs{
+        height:250px;
+    }
+    .font3{
+        font-size:31px;
+    }
+    .font4{
+        font-size:22px;
+    }
+}
+
+
+
+/*from the dashboard.css for the investment part in the index*/
+.invcard2{
+    border: 1px solid white;
+    border-radius:4px;
+    -moz-box-shadow:0 0 10px rgba(58, 70, 143, 0.1);
+    -webkit-box-shadow:0 0 10px rgba(58, 70, 143, 0.1);
+    box-shadow:0 0 10px rgba(58, 70, 143, 0.1);
+    padding: 10px;
+    margin: 20px auto 0;
+    width:70%;
+}
+.invcard3{
+    border: 1px solid white;
+    border-radius:4px;
+    -moz-box-shadow:0 0 10px rgba(58, 70, 143, 0.1);
+    -webkit-box-shadow:0 0 10px rgba(58, 70, 143, 0.1);
+    box-shadow:0 0 10px rgba(58, 70, 143, 0.1);
+    padding: 10px;
+    width:70%;
+}
+.dbtn3{
+    float:right;
+    border: 1px solid #82b54f;
+    border-radius:10px;
+    background:#82b54f;
+    text-align:center;
+    padding: 5px 20px 5px 20px;
+    color:white;
+}
+.dbtn4{
+    float:right;
+    border: 1px solid #c30303;
+    border-radius:10px;
+    background: #c30303;
+    text-align:center;
+    padding: 5px 20px 5px 20px;
+    color:white;
+}
+.invbtn{
+    display:block;
+    border: 2px solid #82b54f;
+    border-radius:10px;
+    background: #dcf1c7;
+    text-align:center;
+    padding: 5px 20px 5px 20px;
+    color:#82b54f;
+    margin:30px auto 50px;
+}
+
+
+
+
+    
+.btn2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.text4{
+    color:#82b54f;
+    text-align:center;
+    padding-top:50px;
+    font-size:30px;
+    font-weight:bold;
+}
+.card1{
+    border: 1px solid white;
+    background-color:white;
+    border-radius:7px;
+    -moz-box-shadow:0 0 10px rgba(58, 70, 143, 0.1);
+    -webkit-box-shadow:0 0 10px rgba(58, 70, 143, 0.1);
+    box-shadow:0 0 10px rgba(58, 70, 143, 0.1);
+}
+.thumbs{
+    width:100%;
+    align:center;
+    margin: auto;
+    padding: inherit;
+}
+.spac3{
+    padding: 0 20px 0;
+    
+}
+@media (min-width:900px) {
+    .spac3{height:250px;}
+}
+.btn3{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.font3{
+    color:#545252;
+    text-align:center;
+}
+.font4{
+    color:#545252;
+    margin:0px 5px 0px;
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:15px;
+}
+.sect2{
+    background-color:#dcf1c7;
+}
+.text5{
+    color:#545252;
+    text-align:center;
+    margin-top:30px;
+}
+.card2{
+    border: 1px solid white;
+    background-color:white;
+    padding:0 20px 0;
+}
+.text6{
+    color:#82b54f;
+    font-size:25px;
+    text-align:center;
+}
+.font5{
+    font-size:19px;
+    margin:0px 5px 0px;
+}
+.text7{
+    color:#82b54f;
+    font-size:21px;
+    text-align:center;
+}
+.text8{
+    font-size:18px;
+    text-align:center;
+}
+
+.thumb2{
+    width:100%;
+    height:250px
+}
+.text9{
+    font-size:18px;
+}
+.text10{
+    font-size:12px;
+    color:#c4c4c4;
+}
+
+footer{
+    background: #1D3B01;
+    color:white;
+}
+.text11{
+    font-size:19px;
+    padding-bottom:10px;
+}
+.text12{
+    font-size:17px;
+}
+.newsletter{
+    width:70%;
+    padding: 8px 8px;
+    display: inline-block;
+    border: 0.5px solid #c4c4c4;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.02);
+    background: #FFFFFF;
+}
+
+
+
+
+/*blog style*/
+
+@media (min-width:768px) {
+    .card3{
+        width:70%;
+    }
+    .img1{
+        height:350px;
+    }
+    .img2{
+        width:100%;
+        height:220px;
+    }
+    .spac4{
+        margin: 40px 0 0;
+    }
+    .spac5{
+        margin: 30px 0 0;
+    }
+    .card4l{
+        width:85%;
+        float:right;
+    }
+    .card4r{
+        width:85%;
+        float:left;
+    }
+    .text15{
+        font-size:27px;
+    }
+    .card5{
+        width:70%;
+    }
+    .img3{
+        
+    }
+    .img4{
+        width:150px;
+        height:150px;
+    }
+}
+@media (max-width:768px) {
+    .card3{
+        width:85%;
+    }
+    .img1{
+        height:250px;
+    }
+    .text14{
+        font-size:25px;
+    }
+    .img2{
+        width:100%;
+        height:180px;
+    }
+    .spac4{
+        margin: 40px 0 0;
+    }
+    .spac6{
+        margin: 30px 0 0;
+    }
+    .text15{
+        font-size:23px;
+    }
+    .card5{
+        width:85%;
+    }
+    .img3{
+        
+    }
+    .img4{
+        width:120px;
+        height:120px;
+    }
+}
+
+.card3{
+    box-shadow: 0px 8.88889px 14.2222px rgba(196, 196, 196, 0.16), 0px 3.55556px 5.33333px rgba(0, 0, 0, 0.06);
+    margin:0 auto 0;
+}
+.text13{
+    color:  #82B54F;
+    font-weight: 500;
+    font-size: 19px;
+    line-height:30px;
+}
+.card4{
+    box-shadow: 0px 8.88889px 14.2222px rgba(196, 196, 196, 0.16), 0px 3.55556px 5.33333px rgba(0, 0, 0, 0.06);
+    margin:0 auto 0;
+}
+.text16{
+    color:  #000;
+    font-weight: 500;
+    font-size: 19px;
+    line-height:30px;
+}
+.hr{
+    width:90%;
+    margin:30px auto 0;
+}
+/***blog single pages***/
+
+@media (max-width:768px) {
+    #jumbo1{
+        height:250px;
+        padding:15px;
+    }
+    .text17{
+        margin-top:90px
+    }
+    .text18{
+        margin:0 20px 0;
+    }
+    .img5{
+        height:200px;
+        
+    }
+    .img6{
+        display:none;
+    }
+    .spac7{
+        margin-bottom:20px;
+    }
+    form .input1{
+        width: 67%;
+    }
+}
+@media (min-width:768px) {
+    #jumbo1{
+        height:450px;
+        padding:40px;
+    }
+    .text17{
+        margin-top:250px
+    }
+    .text18{
+        font-size:17px;
+        margin:0 40px 0;
+    }
+    .img5{
+        height:330px;
+    }
+    .img6{
+        width: 80%;
+        height: 480px;
+    }
+    form .input1{
+        width: 65%;
+    }
+}
+#jumbo1{
+    background: url(../images/jumbocontact.jpg) no-repeat;
+    background-size:cover;
+}
+#jumbo1 .jumbotron {
+    color:white;
+    background-color: rgba(255,255,255,0);
+}
+.division{
+    width:80%;
+    margin:30px auto 30px;
+}
+.text19{
+    font-size:20px;
+    font-weight:bold;
+    margin:20px 0 10px 40px;
+}
+.font6{
+    font-size:38px;
+    font-weight:bold;
+}
+form .input1{
+    padding: 12px 20px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.textarea1{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height:100px;
+}
+
+
+/* for contact page*/
+@media (max-width:768px) {
+    
+}
+@media (min-width:768px) {
+    .text23{
+        font-size:19px;
+    }
+}
+.text22{
+    text-align:center;
+    font-size:24px;
+}
+.text24{
+    text-align:center;
+    font-size:27px;
+    font-weight:bold;
+}
+.text25{
+    font-size:18px;
+    text-align:center;
+}
+.card6{
+    border: 1px solid white;
+    background-color:white;
+    border-radius:4px;
+    -moz-box-shadow:0 0 10px rgba(58, 70, 143, 0.1);
+    -webkit-box-shadow:0 0 10px rgba(58, 70, 143, 0.1);
+    box-shadow:0 0 10px rgba(58, 70, 143, 0.1);
+    padding: 0 15px 0;
+}
+form .input2{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.textarea2{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height:100px;
+}
